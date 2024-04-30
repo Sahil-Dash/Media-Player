@@ -1,0 +1,44 @@
+/* 
+body {
+
+
+} */
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  padding-top: 10vh;
+  color: black;
+  background-color: black;
+  justify-content: center;
+}
+
+.musicForm {
+  padding-top: 40px;
+  padding-left: 25px;
+}
+
+h1,
+h2,
+h3,
+p,
+input {
+  color: white;
+  text-align: center;
+}
+
+
+.progress-bar-container {
+  width: 200px; /* Adjust width as needed */
+  height: 10px; /* Adjust height as needed */
+  border-radius: 5px;
+  background-color: white ;
+  overflow: hidden;
+}
+
+#music-progress {
+  background-color: green ;/* Adjust progress bar color */
+  width: 0%; /* Initial state */
+}
+
