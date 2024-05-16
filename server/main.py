@@ -8,8 +8,8 @@ app = Flask(__name__)
 CORS(app)
 
 # Connect to MongoDB
-client = MongoClient('mongodb://localhost:27017/')
-db = client['test']
+client = MongoClient('mongodb+srv://sahildash386:GvVr0NeOQOy0BnDa@banking.hpi0xer.mongodb.net/?retryWrites=true&w=majority&appName=Banking')
+db = client['Music']
 musicCol=db['media']
 
 gridfs = GridFS(db)

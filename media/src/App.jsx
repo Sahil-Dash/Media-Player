@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { PlayFill, PauseFill, CaretRightSquareFill, CaretLeftSquareFill, UsbPlugFill, Upload } from 'react-bootstrap-icons';
+import { PlayFill, PauseFill, CaretRightSquareFill, CaretLeftSquareFill, Upload } from 'react-bootstrap-icons';
 
-// import "./styles.css";
 import WaveForm from "./WaveForm";
 import ProgressBar from "./Components/ProgressBar";
 
@@ -49,10 +48,6 @@ export default function App() {
       .catch((error) => console.error(error));
 
     await fetchMusic(files[currentIndex])
-
-
-
-
 
 
   };
@@ -231,7 +226,7 @@ export default function App() {
 
           <div style={{paddingTop:"20px"}}>
 
-          <CaretLeftSquareFill onTouchStart={()=>{console.log("touched")}} onClick={previousMedia} color="white" size={27} />
+          <CaretLeftSquareFill onClick={previousMedia} color="white" size={27} />
 
           {(playing === true)
             ? <PauseFill onClick={pauseMedia} color="white" size={30} />
